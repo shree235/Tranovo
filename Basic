@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>B2B Travel Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Destinations</a></li>
+				<li><a href="#">Bookings</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<div class="login">
+				<a href="#">Travel Agent Login</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h1>Welcome to B2B Travel</h1>
+			<p>Find the best travel deals and packages for your clients</p>
+			<form>
+				<label for="destination">Where do you want to go?</label>
+				<input type="text" id="destination" name="destination" required>
+				<label for="checkin">Check-in date</label>
+				<input type="date" id="checkin" name="checkin" required>
+				<label for="checkout">Check-out date</label>
+				<input type="date" id="checkout" name="checkout" required>
+				<button type="submit">Search</button>
+			</form>
+		</section>
+		<section class="packages">
+			<h2>Featured Packages</h2>
+			<ul>
+				<li>
+					<img src="package1.jpg" alt="Package 1">
+					<h3>Package 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<a href="#">Book Now</a>
+				</li>
+				<li>
+					<img src="package2.jpg" alt="Package 2">
+					<h3>Package 2</h3>
+					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="#">Book Now</a>
+				</li>
+				<li>
+					<img src="package3.jpg" alt="Package 3">
+					<h3>Package 3</h3>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<a href="#">Book Now</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 B2B Travel. All rights reserved.</p>
+	</footer>
+</body>
+</html>
