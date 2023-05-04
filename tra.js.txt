@@ -1,0 +1,44 @@
+// DOM Elements
+const bookingForm = document.getElementById('booking-form');
+const bookingButton = document.getElementById('booking-button');
+const loginForm = document.getElementById('login-form');
+const loginButton = document.getElementById('login-button');
+const logoutButton = document.getElementById('logout-button');
+const usernameField = document.getElementById('username');
+
+// Booking Form Submit Event Listener
+bookingForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  // Code to submit booking form data to server
+  alert('Booking submitted successfully!');
+});
+
+// Booking Button Click Event Listener
+bookingButton.addEventListener('click', () => {
+  alert('Please log in to make a booking.');
+});
+
+// Login Form Submit Event Listener
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const username = event.target.elements.username.value;
+  const password = event.target.elements.password.value;
+  // Code to authenticate user credentials with server
+  alert(`Welcome, ${username}!`);
+  loginForm.reset();
+  usernameField.innerText = username;
+  loginForm.style.display = 'none';
+  logoutButton.style.display = 'inline-block';
+});
+
+// Login Button Click Event Listener
+loginButton.addEventListener('click', () => {
+  loginForm.style.display = 'block';
+});
+
+// Logout Button Click Event Listener
+logoutButton.addEventListener('click', () => {
+  usernameField.innerText = '';
+  logoutButton.style.display = 'none';
+  alert('You have been logged out.');
+});
